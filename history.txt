@@ -1,0 +1,426 @@
+    1  2017-07-03 09:57:51 yum history
+    2  2017-07-03 10:00:56 wget -O bootstrap_salt.sh https://bootstrap.saltstack.com
+    3  2017-07-03 10:01:04 sh bootstrap_salt.sh
+    4  2017-07-03 11:36:20 apt-get update ; apt-get install salt-master
+    5  2017-07-03 11:36:30 yum update
+    6  2017-07-03 11:38:08 yum security-update
+    7  2017-07-03 11:38:27 yum security-updates
+    8  2017-07-03 11:38:47 yum -y update --security
+    9  2017-07-03 11:39:08 yum search salt
+   10  2017-07-03 11:39:23 yum search all salt
+   11  2017-07-03 11:39:42 yum install salt-master
+   12  2017-07-03 11:39:55 salt-master 
+   13  2017-07-03 11:40:30 salt-key -L
+   14  2017-07-03 11:59:19 service salt-minion status
+   15  2017-07-03 11:59:33 salt-master 
+   16  2017-07-03 11:59:37 salt-master status
+   17  2017-07-03 11:59:52 service salt-master status
+   18  2017-07-03 11:59:59 service salt-master start
+   19  2017-07-03 12:00:04 /bin/systemctl start  salt-master.service
+   20  2017-07-03 12:00:08 service salt-master status
+   21  2017-07-03 12:00:12 salt-key -L
+   22  2017-07-03 12:01:46 salt-key -a ip-10-8-15-226.eu-west-2.compute.internal
+   23  2017-07-03 12:02:01 salt-key -a *
+   24  2017-07-03 12:03:01 salt-key -A
+   25  2017-07-03 12:03:07 salt-key -L
+   26  2017-07-03 12:03:18 salt '*' cmd.run 'ifconfig'
+   27  2017-07-03 12:14:51 salt '*' cmd.run 'ping google.fr'
+   28  2017-07-03 12:15:57 salt '*' network.ping google.fr
+   29  2017-07-03 12:22:10 mkdir /srv/salt
+   30  2017-07-03 12:22:17 touch server.sls
+   31  2017-07-03 12:22:19 ls
+   32  2017-07-03 12:22:22 rm server.sls 
+   33  2017-07-03 12:22:31 cd /srv/salt/
+   34  2017-07-03 12:22:33 ls
+   35  2017-07-03 12:22:36 touch server.sls
+   36  2017-07-03 12:53:22 vim server.sls 
+   37  2017-07-03 12:53:29 yum isntall -y vim
+   38  2017-07-03 12:53:41 yum install -y vim
+   39  2017-07-03 12:53:51 vim server.sls 
+   40  2017-07-03 12:54:08 salt '*' state.sls server
+   41  2017-07-03 13:03:27 touch utf.sls
+   42  2017-07-03 13:03:31 vim utf.sls 
+   43  2017-07-03 13:03:52 salt '*' state.sls utf
+   44  2017-07-04 08:48:04 ls
+   45  2017-07-04 08:48:17 cd /srv/salt/
+   46  2017-07-04 08:48:17 ls
+   47  2017-07-04 08:48:27 vim vim.sls
+   48  2017-07-04 08:49:58 salt '*' state.sls vim
+   49  2017-07-04 08:50:13 ls
+   50  2017-07-04 08:50:18 vim server.sls 
+   51  2017-07-04 08:50:29 vim utf.sls 
+   52  2017-07-04 08:50:42 vim vim.sls
+   53  2017-07-04 08:50:48 vim utf.sls 
+   54  2017-07-04 08:50:52 vim vim.sls
+   55  2017-07-04 08:51:05 salt '*' state.sls vim
+   56  2017-07-04 08:52:01 salt '*' cmd.run yum update
+   57  2017-07-04 08:52:11 salt '*' cmd.run 'yum update'
+   58  2017-07-04 08:52:33 salt '*' state.sls vim
+   59  2017-07-04 08:52:48 vim vim.sls
+   60  2017-07-04 08:52:55 salt '*' state.sls vim
+   61  2017-07-04 15:18:29 vim top.sls
+   62  2017-07-04 15:18:49 salt '*' state.highstate
+   63  2017-07-04 15:19:21 vim 
+   64  2017-07-04 15:19:32 vim top.sls 
+   65  2017-07-04 15:20:19 salt '*' state.highstate
+   66  2017-07-04 15:29:40 vim top.sls 
+   67  2017-07-04 15:30:03 salt '*' state.highstate
+   68  2017-07-04 15:30:45 ls
+   69  2017-07-04 15:30:49 cat server.sls 
+   70  2017-07-04 15:31:09 salt '*' state.sls server
+   71  2017-07-04 15:31:17 salt '*' state.highstate
+   72  2017-07-04 15:37:06 vim create_dir.sls
+   73  2017-07-04 15:39:47 salt '*' state.sls create_dir
+   74  2017-07-06 08:01:11 salt '*' network.netstat
+   75  2017-07-06 08:01:53 salt '*' network.ping google.fr
+   76  2017-07-06 08:02:08 salt '*' network.ping google.fr return_boolean=True
+   77  2017-07-06 08:02:33 salt '*' network.subnets
+   78  2017-07-06 08:05:46 salt '*' nginx.status
+   79  2017-07-06 08:06:29 salt '*' hosts.list
+   80  2017-07-06 08:06:43 salt '*' hosts.list_hosts
+   81  2017-07-06 08:25:45 pwd
+   82  2017-07-06 08:25:50 cd /srv/salt/
+   83  2017-07-06 08:25:50 ls
+   84  2017-07-06 08:25:55 vim top.sls 
+   85  2017-07-06 08:27:09 salt '*' state.sls top
+   86  2017-07-06 08:27:19 vim top.sls 
+   87  2017-07-06 08:51:19 ls -ls
+   88  2017-07-06 08:51:40 salt '*' state.highstate
+   89  2017-07-06 08:57:38 vim server.sls 
+   90  2017-07-06 08:57:58 salt '*' state.highstate
+   91  2017-07-06 08:58:08 vim server.sls 
+   92  2017-07-06 08:58:14 salt '*' state.highstate
+   93  2017-07-06 09:05:57 salt '*' pillar.items
+   94  2017-07-06 09:13:23 vim nano.sls
+   95  2017-07-06 09:15:31 vim top.sls 
+   96  2017-07-06 09:16:07 salt '*' state.highstate
+   97  2017-07-06 09:41:43 salt '*' cmd.run 'ls -l /etc/salt'
+   98  2017-07-06 09:41:55 salt '*' cmd.run 'cat /etc/salt/minion'
+   99  2017-07-06 09:44:18 salt '*' cmd.run 'ls -l /etc/salt'
+  100  2017-07-06 09:44:29 salt '*' cmd.run 'ls -l /etc/salt/minion.d'
+  101  2017-07-06 09:56:59 salt '*' pillar.items
+  102  2017-07-06 10:07:04 salt '*' grains.data
+  103  2017-07-06 10:07:17 salt '*' grains.items
+  104  2017-07-06 10:09:26 salt '*' pillar.data
+  105  2017-07-06 10:16:17 pwd
+  106  2017-07-06 10:16:28 mkdir /srv/pillar
+  107  2017-07-06 10:18:19 vim ../pillar/default.sls
+  108  2017-07-06 10:18:47 salt '*' saltutil.refresh_pillar
+  109  2017-07-06 11:38:12 salt '*' grains.items
+  110  2017-07-06 11:39:41 vim ../pillar/default.sls 
+  111  2017-07-06 11:45:02 salt '*' grains.items
+  112  2017-07-06 11:45:07 salt '*' pillar.data
+  113  2017-07-06 11:45:13 salt '*' saltutil.refresh_pillar
+  114  2017-07-06 11:45:16 salt '*' pillar.data
+  115  2017-07-06 11:45:20 salt '*' grains.items
+  116  2017-07-06 11:46:17 vim ../pillar/default.sls 
+  117  2017-07-06 11:49:44 salt '*' state.sls pillar.common
+  118  2017-07-06 11:50:03 salt '*' state.highstate
+  119  2017-07-06 11:50:11 salt '*' grains.items
+  120  2017-07-06 11:50:18 vim ../pillar/default.sls 
+  121  2017-07-06 11:55:54 salt-run pillar.default
+  122  2017-07-06 11:56:07 salt-run pillar.show_pillar 'www.example.com'
+  123  2017-07-06 11:56:15 salt-run pillar.show_top
+  124  2017-07-06 11:56:26 salt '*' pillar.items
+  125  2017-07-06 11:56:52 touch ../pillar/top.sls
+  126  2017-07-06 11:56:58 vim ../pillar/top.sls 
+  127  2017-07-06 11:57:26 salt '*' pillar.items
+  128  2017-07-06 11:57:43 ls ../pillar/
+  129  2017-07-06 11:57:47 vim ../pillar/top.sls 
+  130  2017-07-06 11:58:02 salt '*' saltutil.refresh_pillar
+  131  2017-07-06 11:58:07 salt '*' pillar.items
+  132  2017-07-06 11:59:24 salt-master -l debug
+  133  2017-07-06 12:12:20 vim ../pillar/top.sls 
+  134  2017-07-06 12:12:29 vim ../pillar/default.sls 
+  135  2017-07-06 12:12:47 salt '*' saltutil.refresh_pillar
+  136  2017-07-06 12:12:54 salt '*' pillar.items
+  137  2017-07-06 12:13:05 vim ../pillar/default.sls 
+  138  2017-07-06 12:14:15 salt-call pillar.get bind
+  139  2017-07-06 12:17:39 salt '*' saltutil.refresh_pillar
+  140  2017-07-06 12:17:49 salt '*' pillar.items
+  141  2017-07-06 12:18:09 vim ../pillar/default.sls 
+  142  2017-07-06 12:18:23 salt '*' saltutil.refresh_pillar
+  143  2017-07-06 12:18:26 salt '*' pillar.items
+  144  2017-07-06 12:18:32 vim ../pillar/default.sls 
+  145  2017-07-06 12:18:44 salt '*' saltutil.refresh_pillar
+  146  2017-07-06 12:18:47 salt '*' pillar.items
+  147  2017-07-06 12:18:58 vim ../pillar/default.sls 
+  148  2017-07-06 12:19:26 salt '*' saltutil.refresh_pillar
+  149  2017-07-06 12:19:29 salt '*' pillar.items
+  150  2017-07-06 12:20:11 salt '*' cmd.run 'ping google.fr'
+  151  2017-07-06 12:20:40 vim ../pillar/default.sls 
+  152  2017-07-06 12:20:44 salt '*' saltutil.refresh_pillar
+  153  2017-07-06 12:20:50 salt '*' pillar.items
+  154  2017-07-06 12:21:09 salt '*' network.ping google.fr return_boolean=True
+  155  2017-07-06 12:21:20 salt '*' network.ping google.fr 
+  156  2017-07-06 12:30:01 salt '*' saltutil.refresh_pillar
+  157  2017-07-06 12:30:04 salt '*' pillar.items
+  158  2017-07-06 12:30:28 salt '*' state.highstate
+  159  2017-07-06 12:37:34 vim /etc/salt/master
+  160  2017-07-06 12:38:19 service salt-master reload
+  161  2017-07-06 12:38:25 /bin/systemctl reload  salt-master.service
+  162  2017-07-06 12:38:43 /bin/systemctl restart  salt-master.service
+  163  2017-07-06 12:38:48 salt '*' pillar.items
+  164  2017-07-06 12:39:22 salt '*' saltutil.refresh_pillar
+  165  2017-07-06 12:39:24 salt '*' pillar.items
+  166  2017-07-06 12:39:32 salt '*' state.highstate
+  167  2017-07-06 12:43:34 vim ../pillar/default.sls 
+  168  2017-07-06 12:44:49 salt '*' saltutil.refresh_pillar
+  169  2017-07-06 12:44:53 salt '*' pillar.items
+  170  2017-07-06 12:45:18 vim ../pillar/default.sls 
+  171  2017-07-06 12:45:40 salt '*' saltutil.refresh_pillar
+  172  2017-07-06 12:45:43 salt '*' pillar.items
+  173  2017-07-06 12:47:56 salt '*' saltutil.refresh_pillar
+  174  2017-07-06 12:47:59 salt '*' pillar.items
+  175  2017-07-06 12:51:06 vim ../pillar/default.sls 
+  176  2017-07-06 12:51:16 salt '*' pillar.items
+  177  2017-07-07 13:28:21 cd /srv/
+  178  2017-07-07 13:28:24 ls -ls
+  179  2017-07-07 13:28:25 ll
+  180  2017-07-07 13:28:30 ll pillar/
+  181  2017-07-07 13:28:36 ll salt/
+  182  2017-07-07 13:29:06 cat salt/server.sls 
+  183  2017-07-07 13:29:25 cat salt/utf.sls 
+  184  2017-07-07 13:30:56 touch salt/update.sls
+  185  2017-07-07 13:31:05 touch salt/web;sls
+  186  2017-07-07 13:31:10 touch salt/
+  187  2017-07-07 13:43:42 salt '*' cmd.run "yum search pip | grep pip"
+  188  2017-07-07 13:45:21 salt '*' cmd.run "yum search python-pip | grep pip"
+  189  2017-07-07 13:45:28 salt '*' cmd.run "yum search python-pip"
+  190  2017-07-07 13:46:05 salt '*' cmd.run "uname -a"
+  191  2017-07-07 13:46:52 cat /etc/hostnamectl
+  192  2017-07-07 13:46:53 hostnamectl
+  193  2017-07-07 13:47:20 salt '*' cmd.run "hostnamectl"
+  194  2017-07-07 13:47:40 yum -y install python-pip
+  195  2017-07-07 13:47:54 pip -V
+  196  2017-07-07 13:52:40 vim salt/update.sls 
+  197  2017-07-07 13:59:46 vim salt/top.sls 
+  198  2017-07-07 14:00:18 vim pillar/top.sls 
+  199  2017-07-07 14:00:26 vim pillar/default.sls 
+  200  2017-07-07 14:06:26 vim salt/top.sls 
+  201  2017-07-07 14:06:43 vim salt/web
+  202  2017-07-07 14:06:49 vim salt/web.sls 
+  203  2017-07-07 14:09:31 pip install virtualenv
+  204  2017-07-07 14:09:37 virtualenv 
+  205  2017-07-07 14:10:30 vim salt/web.sls 
+  206  2017-07-07 14:57:08 salt ‘*’ disk.usage
+  207  2017-07-07 14:57:14 salt '*' disk.usage
+  208  2017-07-07 14:57:41 salt '*' sys.doc
+  209  2017-07-07 14:57:50 salt '*' test.ping
+  210  2017-07-07 14:58:50 vim salt/web.sls 
+  211  2017-07-07 15:03:36 salt '*' cmd.run 'ls'
+  212  2017-07-07 15:03:40 salt '*' cmd.run 'ls /'
+  213  2017-07-07 15:03:45 salt '*' cmd.run 'ls /home'
+  214  2017-07-07 15:03:56 salt '*' cmd.run ''
+  215  2017-07-07 15:04:16 vim salt/web.sls 
+  216  2017-07-12 13:49:43 yum search apache2
+  217  2017-07-12 13:50:04 yum install apache2
+  218  2017-07-12 12:53:59 cd /srv/
+  219  2017-07-12 12:54:00 ls
+  220  2017-07-12 12:54:03 cd salt/
+  221  2017-07-12 12:54:04 ls
+  222  2017-07-12 12:54:13 ls -lsa
+  223  2017-07-12 12:54:25 vim top.sls 
+  224  2017-07-12 12:54:34 cat server.sls 
+  225  2017-07-12 12:54:40 cat top.sls 
+  226  2017-07-12 12:54:43 cat update.sls 
+  227  2017-07-12 12:54:47 cat web
+  228  2017-07-12 12:54:51 cat web.sls 
+  229  2017-07-12 12:54:54 rm web
+  230  2017-07-12 12:55:01 vim web.sls 
+  231  2017-07-12 12:56:21 ll
+  232  2017-07-12 12:56:31 cat create_dir.sls 
+  233  2017-07-12 12:56:41 vim web.sls 
+  234  2017-07-12 12:57:42 ps aux
+  235  2017-07-12 12:59:03 vim web.sls 
+  236  2017-07-12 12:59:09 ls -lsa
+  237  2017-07-12 12:59:12 rm .web.sls.swp 
+  238  2017-07-12 12:59:16 vim web.sls 
+  239  2017-07-12 13:27:04 salt '*' test.ping
+  240  2017-07-12 13:27:28 salt '*' state.highstate
+  241  2017-07-12 13:27:41 vim web.sls 
+  242  2017-07-12 13:29:06 salt '*' state.highstate
+  243  2017-07-12 13:29:28 vim web.sls 
+  244  2017-07-12 13:30:26 salt '*' state.highstate
+  245  2017-07-12 13:30:36 vim web.sls 
+  246  2017-07-12 13:30:53 salt '*' state.highstate
+  247  2017-07-12 13:31:12 vim web.sls 
+  248  2017-07-12 13:32:25 salt '*' state.highstate
+  249  2017-07-12 13:32:35 vim web.sls 
+  250  2017-07-12 13:32:57 salt '*' state.highstate
+  251  2017-07-12 13:33:08 vim web.sls 
+  252  2017-07-12 13:33:17 salt '*' state.highstate
+  253  2017-07-12 13:34:44 vim web.sls 
+  254  2017-07-12 13:35:16 salt '*' state.highstate
+  255  2017-07-12 13:35:22 vim web.sls 
+  256  2017-07-12 13:36:48 salt '*' state.highstate
+  257  2017-07-12 13:41:59 salt '*' cmd.run 'ls /home/'
+  258  2017-07-12 13:42:03 salt '*' cmd.run 'ls /home/dev'
+  259  2017-07-12 13:42:20 salt '*' state.
+  260  2017-07-12 13:42:51 vim web.sls 
+  261  2017-07-12 13:45:06 pwd
+  262  2017-07-12 13:45:17 touch install_pip.sls
+  263  2017-07-12 13:45:25 cat web.sls 
+  264  2017-07-12 13:45:36 vim install_pip.sls 
+  265  2017-07-12 13:45:53 salt '*' state.sls install_pip
+  266  2017-07-12 13:46:05 vim install_pip.sls 
+  267  2017-07-12 13:46:19 salt '*' state.sls install_pip
+  268  2017-07-12 13:46:24 vim install_pip.sls 
+  269  2017-07-12 13:48:28 salt '*' state.sls install_pip
+  270  2017-07-12 13:50:50 vim install_pip.sls 
+  271  2017-07-12 13:51:35 salt '*' state.sls install_pip
+  272  2017-07-12 13:52:21 vim install_pip.sls 
+  273  2017-07-12 13:52:32 salt '*' state.sls install_pip
+  274  2017-07-12 13:52:44 vim install_pip.sls 
+  275  2017-07-12 13:52:51 salt '*' state.sls install_pip
+  276  2017-07-12 13:53:17 cat install_pip.sls 
+  277  2017-07-12 13:53:25 vim web.sls 
+  278  2017-07-12 13:53:48 salt '*' state.highstate
+  279  2017-07-12 14:23:04 vim web.sls 
+  280  2017-07-12 14:26:49 salt '*' state.highstate
+  281  2017-07-12 14:27:55 vim web.sls 
+  282  2017-07-12 14:42:23 salt '*' state.highstate
+  283  2017-07-12 14:46:51 `
+  284  2017-07-12 14:47:00 vim web.sls 
+  285  2017-07-12 14:48:17 salt '*' state.highstate
+  286  2017-07-12 14:49:13 vim web.sls 
+  287  2017-07-12 14:52:02 salt '*' state.highstate
+  288  2017-07-12 14:53:11 vim web.sls 
+  289  2017-07-12 14:53:36 salt '*' state.highstate
+  290  2017-07-12 14:56:25 vim web.sls 
+  291  2017-07-12 14:56:31 salt '*' state.highstate
+  292  2017-07-12 14:56:49 vim web.sls 
+  293  2017-07-12 14:59:12 vim update.sls 
+  294  2017-07-12 15:01:32 salt '*' state.highstate
+  295  2017-07-12 15:03:18 vim update.sls 
+  296  2017-07-12 15:03:22 vim web.sls 
+  297  2017-07-12 15:03:49 vim update.sls 
+  298  2017-07-12 15:03:52 salt '*' state.highstate
+  299  2017-07-12 15:05:24 vim update.sls 
+  300  2017-07-12 15:05:28 vim web.sls 
+  301  2017-07-12 15:05:55 salt '*' state.highstate
+  302  2017-07-12 15:09:59 pip version
+  303  2017-07-12 15:10:01 pip
+  304  2017-07-12 15:10:09 pip help
+  305  2017-07-12 15:17:43 vim web.sls 
+  306  2017-07-12 15:18:12 vim virtualenv.sls
+  307  2017-07-12 15:18:19 vim top.sls 
+  308  2017-07-12 15:18:32 salt '*' state.highstate
+  309  2017-07-12 15:18:49 vim virtualenv.sls
+  310  2017-07-12 15:19:07 vim web.sls 
+  311  2017-07-12 15:19:48 vim /usr/lib/python2.7/site-packages/salt/states/pip_state.py
+  312  2017-07-12 15:21:50 vim web.sls 
+  313  2017-07-12 15:21:58 vim virtualenv.sls 
+  314  2017-07-12 15:22:57 salt '*' state.highstate
+  315  2017-07-12 15:23:33 vim virtualenv.sls 
+  316  2017-07-12 15:23:55 salt '*' state.highstate
+  317  2017-07-12 15:32:11 vim virtualenv.sls 
+  318  2017-07-12 15:32:17 vim web.sls 
+  319  2017-07-12 15:32:49 vim virtualenv.sls 
+  320  2017-07-12 15:32:57 vim web.sls 
+  321  2017-07-12 15:33:52 salt '*' state.highstate
+  322  2017-07-12 15:37:02 vim web.sls 
+  323  2017-07-12 15:37:22 salt '*' state.highstate
+  324  2017-07-12 15:37:35 vim web.sls 
+  325  2017-07-12 15:37:42 vim virtualenv.sls 
+  326  2017-07-12 15:38:26 salt '*' state.sls virtualenv
+  327  2017-07-12 15:38:39 vim virtualenv.sls 
+  328  2017-07-12 15:38:50 salt '*' state.sls virtualenv
+  329  2017-07-12 15:39:10 vim virtualenv.sls 
+  330  2017-07-12 15:39:43 salt '*' state.sls virtualenv
+  331  2017-07-12 15:39:48 vim virtualenv.sls 
+  332  2017-07-12 15:40:03 salt '*' state.sls virtualenv
+  333  2017-07-12 15:40:06 vim virtualenv.sls 
+  334  2017-07-12 15:40:14 salt '*' state.sls virtualenv
+  335  2017-07-12 15:40:17 vim virtualenv.sls 
+  336  2017-07-12 15:40:25 salt '*' state.sls virtualenv
+  337  2017-07-12 15:48:45 vim virtualenv.sls 
+  338  2017-07-12 15:49:46 vim web.sls 
+  339  2017-07-12 15:50:09 salt '*' state.highstate
+  340  2017-07-12 15:50:33 vim web.sls 
+  341  2017-07-12 15:50:44 salt '*' state.highstate
+  342  2017-07-12 15:51:02 vim web.sls 
+  343  2017-07-12 15:52:31 salt '*' state.highstate
+  344  2017-07-12 15:53:09 vim web.sls 
+  345  2017-07-12 15:53:17 salt '*' state.highstate
+  346  2017-07-12 15:53:49 vim web.sls 
+  347  2017-07-12 15:54:14 salt '*' state.highstate
+  348  2017-07-12 15:54:31 vim virtualenv.sls 
+  349  2017-07-12 16:07:59 salt '*' cmd.run 'pip freeze'
+  350  2017-07-12 16:08:20 salt '*' cmd.run 'ls /home'
+  351  2017-07-12 16:08:24 salt '*' cmd.run 'ls /home/dev'
+  352  2017-07-12 16:08:32 salt '*' cmd.run 'ls /home/dev/rh'
+  353  2017-07-12 16:08:51 salt '*' cmd.run 'ls /home/dev/venv'
+  354  2017-07-12 16:08:55 salt '*' cmd.run 'ls /home/dev/venv/bin'
+  355  2017-07-13 13:24:55 salt-key
+  356  2017-07-13 13:25:01 salt-key --list
+  357  2017-07-13 13:25:07 salt-key --list=unaccepted
+  358  2017-07-13 13:25:12 salt-key --list=accepted
+  359  2017-07-13 13:25:44 salt-call --log-level=debug
+  360  2017-07-13 13:25:49 salt-call --log-level=debug disk.percent
+  361  2017-07-13 13:26:13 salt-call --log-level=debug disk.percent /
+  362  2017-07-13 13:26:22 salt-call disk.percent /
+  363  2017-07-13 13:27:03 salt-call test.ping
+  364  2017-07-13 13:27:09 netstat -laputen
+  365  2017-07-13 13:27:24 salt-run manage.run
+  366  2017-07-13 13:27:30 salt-run manage.up
+  367  2017-07-13 13:27:52 salt-key --finger
+  368  2017-07-13 13:28:00 salt-key --finger ip-10-8-15-226.eu-west-2.compute.internal
+  369  2017-07-13 13:30:01 ls /etc/salt/pki/minion/
+  370  2017-07-13 13:30:05 ls /etc/salt/pki/master/
+  371  2017-07-13 13:30:33 cat /etc/salt/pki/master/master.pem 
+  372  2017-07-13 13:30:39 cat /etc/salt/pki/master/master.pub 
+  373  2017-07-13 13:31:02 cat /etc/salt/pki/master/minions/ip-10-8-15-226.eu-west-2.compute.internal 
+  374  2017-07-13 13:32:47 salt 'ip-10*' test.ping
+  375  2017-07-13 13:33:05 salt 'ip-10-8-15*' test.ping
+  376  2017-07-13 13:48:09 salt '*' grains.items
+  377  2017-07-13 13:48:44 salt -G 'os:' test.ping
+  378  2017-07-13 13:48:50 salt -G 'os:RedHat' test.ping
+  379  2017-07-13 13:48:57 salt -G 'os:CentOS' test.ping
+  380  2017-07-13 13:49:44 salt -G 'manufacturer:*' test.ping
+  381  2017-07-13 13:49:51 salt -G 'manufacturer:Outscale' test.ping
+  382  2017-07-13 13:50:09 salt -G 'manufacturer:OUTSCALE' test.ping
+  383  2017-07-13 14:07:41 salt '*' grains.ls
+  384  2017-07-13 15:09:01 salt '*' grains.ls 
+  385  2017-07-13 15:09:11 salt '*' grains.items
+  386  2017-07-13 15:09:19 salt '*' grains.ls 
+  387  2017-07-13 15:09:48 salt '*' sys.doc
+  388  2017-07-13 15:09:56 salt '*' sys.doc test.ping
+  389  2017-07-13 15:10:09 salt '*' sys.doc test
+  390  2017-07-13 15:11:53 salt '*' sys.doc sys
+  391  2017-07-13 15:12:00 salt '*' sys.doc sys.doc
+  392  2017-07-13 15:12:23 salt '*' sys.doc network.traceroute user.info
+  393  2017-07-13 15:12:42 salt '*' network.traceroute archlinux.org
+  394  2017-07-13 15:14:34 salt '*' sys.list_modules
+  395  2017-07-13 15:14:43 salt '*' sys.list_functions
+  396  2017-07-13 15:15:41 salt -G 'manufacturer:* sys.list_functions
+  397  2017-07-13 15:15:46 salt -G 'manufacturer:*' sys.list_functions
+  398  2017-07-13 15:16:15 salt -G 'manufacturer:*' sys.list_modules
+  399  2017-07-13 15:16:32 salt -G 'manufacturer:*' apache.server_status
+  400  2017-07-13 15:16:46 salt -G 'manufacturer:*' sys.list_functions
+  401  2017-07-13 15:17:14 salt -G 'manufacturer:*' apache.config
+  402  2017-07-13 15:17:36 salt -G 'manufacturer:*' sys.doc apache.config 
+  403  2017-07-13 15:18:25 salt -G 'manufacturer:*' apache.config  /etc/httpd/conf.d/ports.conf
+  404  2017-07-13 15:18:36 salt -G 'manufacturer:*' apache.config  /etc/httpd/conf.d/ports.conf config="[{'Listen': '22'}]"
+  405  2017-07-13 15:18:43 salt -G 'manufacturer:*' sys.doc apache.config 
+  406  2017-07-13 15:19:36 salt -G 'manufacturer:*' sys.list_modules
+  407  2017-07-13 15:19:46 salt -G 'manufacturer:*' sys.list_functions
+  408  2017-07-13 15:21:56 salt -G 'manufacturer:*' sys.list_functions grains
+  409  2017-07-13 15:22:01 salt -G 'manufacturer:*' sys.list_functions sys
+  410  2017-07-13 15:22:10 salt -G 'manufacturer:*' sys.list_modules pkg
+  411  2017-07-13 15:22:48 salt -G 'manufacturer:*' sys.list_modules user
+  412  2017-07-13 15:22:54 salt -G 'manufacturer:*' sys.list_functions user
+  413  2017-07-13 15:23:16 salt '*' user.list_users
+  414  2017-07-13 15:25:04 pwd
+  415  2017-07-13 15:25:07 cd /srv/
+  416  2017-07-13 15:25:08 ls
+  417  2017-07-13 15:25:14 git init
+  418  2017-07-13 15:25:21 apt search git
+  419  2017-07-13 15:25:30 yum install git
+  420  2017-07-13 15:25:49 git init
+  421  2017-07-13 15:25:58 ls
+  422  2017-07-13 15:26:08 cat pillar/top.sls 
+  423  2017-07-13 15:26:14 cat pillar/default.sls 
+  424  2017-07-13 15:26:27 cat salt/web.sls 
+  425  2017-07-13 15:26:43 history 
+  426  2017-07-13 15:26:54 history > history.txt
