@@ -7,3 +7,4 @@ base:
     - server
     - vim
     - nano
+    - hello
