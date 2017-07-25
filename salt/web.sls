@@ -1,10 +1,14 @@
 # Install python dependances and other packages
-/home/dev:
+/home/khidma/dev:
   file.directory:
-    - user: root
-    - group: root
-    - dir_mode: 644
+    - user: apache
+    - group: apache
+    - dir_mode: 755
     - makedirs: True
+    - recurse:
+      - mode
+      - user
+      - group
 
 install_packages:
   pkg.installed:
@@ -20,7 +24,7 @@ install_packages:
 download_depot:
   git.latest:
     - name: https://github.com/mourkeita/django-rh.git
-    - target: /home/dev
+    - target: /home/khidma/dev/django-rh
     - user: root
 
 
